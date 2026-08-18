@@ -3,100 +3,208 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Basanti Stores - Wholesale supplier of fishing nets, boundary nets, shade nets, ropes, tarpaulins, pipes and agricultural products in Tripura.">
+<meta name="description" content="Basanti Stores - wholesale supplier of fishing nets, boundary nets, shade nets, ropes, tarpaulins, pipes and agricultural products across Tripura.">
 <title>Basanti Stores | Quality Products. Reliable Supply.</title>
 <style>
-:root{--green:#063d2b;--green2:#0a5038;--gold:#dca72f;--cream:#faf9f4;--ink:#10261d;--muted:#617068;--white:#fff}
+:root{--green:#063b2c;--green2:#0b5a42;--gold:#e4aa2f;--cream:#fffaf0;--ink:#13231e;--muted:#64706b;--line:#e7ece8}
 *{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
-body{font-family:Arial,Helvetica,sans-serif;color:var(--ink);background:var(--cream);line-height:1.6}
+body{font-family:Arial,Helvetica,sans-serif;color:var(--ink);background:#fff;line-height:1.6}
 a{text-decoration:none;color:inherit}
-.topbar{background:#03291d;color:#fff;padding:9px 5%;display:flex;justify-content:space-between;gap:20px;font-size:13px}
-.nav{background:#fff;display:flex;align-items:center;justify-content:space-between;padding:10px 5%;position:sticky;top:0;z-index:20;box-shadow:0 2px 15px #00000012}
-.logo{height:88px;width:auto;object-fit:contain}
-.navlinks{display:flex;gap:30px;align-items:center;font-weight:700}
-.navlinks a:hover{color:var(--gold)}
-.whatsapp{background:var(--green);color:#fff;padding:13px 20px;border-radius:8px;font-weight:700}
-.hero{min-height:520px;background:radial-gradient(circle at 20% 40%,#0b6546 0,#063d2b 38%,#02291d 100%);color:#fff;display:flex;align-items:center;position:relative;overflow:hidden}
-.hero:before,.hero:after{content:"";position:absolute;border-radius:50%;border:1px solid #ffffff12}
-.hero:before{width:600px;height:600px;right:-180px;top:-120px}.hero:after{width:420px;height:420px;left:-170px;bottom:-180px}
-.hero-inner{width:min(1120px,90%);margin:auto;text-align:center;position:relative;z-index:2}
-.hero h1{font-family:Georgia,serif;font-size:clamp(42px,6vw,76px);line-height:1.02;margin-bottom:20px}
-.hero h1 span{color:var(--gold)}
-.hero p{max-width:760px;margin:0 auto 30px;font-size:19px;color:#f2f5f2}
-.btns{display:flex;justify-content:center;gap:14px;flex-wrap:wrap}.btn{padding:14px 24px;border-radius:8px;font-weight:800;border:1px solid var(--gold)}
-.btn.gold{background:var(--gold);color:#10261d}.btn.outline{color:#fff}
-.section{padding:70px 5%;max-width:1250px;margin:auto}
-.kicker{text-align:center;color:#b88616;font-weight:800;letter-spacing:2px;font-size:13px}
-.section h2{text-align:center;font:700 42px Georgia,serif;margin:7px 0 35px;color:var(--green)}
-.products{display:grid;grid-template-columns:repeat(7,1fr);gap:14px}
-.card{background:#fff;border-radius:12px;padding:12px;box-shadow:0 5px 20px #073d2b12;text-align:center;border:1px solid #e5e7e4}
-.icon{height:125px;border-radius:9px;display:flex;align-items:center;justify-content:center;font-size:55px;background:linear-gradient(145deg,#e8f4ee,#d2e9df)}
-.card h3{font-size:15px;margin:12px 0 10px}.smallbtn{display:inline-block;padding:8px 12px;border:1px solid var(--green);border-radius:6px;font-size:12px;font-weight:700;color:var(--green)}
-.center{text-align:center;margin-top:28px}
-.about{background:#fff}
-.about-grid{display:grid;grid-template-columns:1.1fr 1.2fr .9fr;gap:35px;align-items:center}
-.about h2{text-align:left;margin-bottom:15px}.about p{color:var(--muted);margin-bottom:14px}
-.features{display:grid;grid-template-columns:1fr 1fr;gap:22px}.feature{display:flex;gap:13px}.feature b{display:block;margin-bottom:4px}.feature-icon{width:48px;height:48px;flex:none;border-radius:50%;background:#e9f1ed;color:var(--green);display:grid;place-items:center;font-size:23px}
-.enquiry{background:var(--green);color:#fff;padding:35px 28px;border-radius:14px;text-align:center;border:2px solid #c9941f}.enquiry h3{font:700 28px Georgia,serif;color:#fff;margin-bottom:10px}.enquiry p{color:#dfece6}.enquiry .btn{display:block;margin:12px 0}
-.cta{background:linear-gradient(100deg,#083d2c,#0b5a3f);color:#fff;text-align:center;padding:55px 5%}.cta h2{color:#fff;margin:0 0 12px}.cta p{margin-bottom:22px}
-footer{background:#02291d;color:#fff;padding:45px 5% 20px}.footer-grid{max-width:1200px;margin:auto;display:grid;grid-template-columns:1.2fr 1fr 1.2fr 1fr;gap:35px}.footer-logo{height:95px;background:#fff;border-radius:8px;padding:5px}.footer h4{color:var(--gold);margin-bottom:13px;font-size:17px}.footer a,.footer p{display:block;color:#d5e2dc;margin:7px 0;font-size:14px}.copy{border-top:1px solid #ffffff22;margin-top:30px;padding-top:18px;text-align:center;color:#b7c8c0;font-size:13px}
-.mobile-menu{display:none}
-@media(max-width:1000px){.products{grid-template-columns:repeat(4,1fr)}.about-grid{grid-template-columns:1fr 1fr}.enquiry{grid-column:1/-1}.footer-grid{grid-template-columns:1fr 1fr}}
-@media(max-width:700px){
-.topbar{font-size:11px;justify-content:center;text-align:center}.topbar span:first-child{display:none}
-.nav{padding:7px 4%;}.logo{height:62px}.navlinks{display:none}.mobile-menu{display:block;background:var(--green);color:#fff;border:0;border-radius:7px;padding:10px 13px;font-size:20px}
-.hero{min-height:570px}.hero h1{font-size:48px}.hero p{font-size:16px}.section{padding:50px 4%}.section h2{font-size:34px}.products{grid-template-columns:repeat(2,1fr);gap:12px}.icon{height:110px}.about-grid{grid-template-columns:1fr}.about h2{text-align:center}.features{gap:16px}.footer-grid{grid-template-columns:1fr}.footer-logo{height:80px}
+.topbar{background:#052f24;color:#fff;padding:9px 5%;font-size:14px;display:flex;justify-content:space-between;gap:20px;align-items:center}
+.topbar a{color:#ffd35a;font-weight:700}
+header{position:sticky;top:0;z-index:20;background:#fff;border-bottom:1px solid var(--line);display:flex;align-items:center;justify-content:space-between;padding:13px 5%;box-shadow:0 3px 15px rgba(0,0,0,.05)}
+.logo{width:112px;height:82px;object-fit:contain}
+nav{display:flex;align-items:center;gap:28px;font-weight:700}
+nav a:hover{color:var(--green2)}
+.nav-cta{background:var(--green);color:#fff;padding:11px 18px;border-radius:9px}
+.menu{display:none;border:0;background:var(--green);color:#fff;border-radius:9px;padding:10px 13px;font-size:22px}
+.hero{background:radial-gradient(circle at 10% 10%,rgba(45,128,94,.28),transparent 35%),linear-gradient(135deg,#063b2c,#022d22);color:#fff;padding:78px 5% 82px;position:relative;overflow:hidden}
+.hero:after{content:"";position:absolute;width:520px;height:520px;border:1px solid rgba(255,255,255,.08);border-radius:50%;right:-190px;bottom:-250px}
+.hero-inner{max-width:1120px;margin:auto;position:relative;z-index:2}
+.badge{display:inline-block;color:#ffd35a;border:1px solid rgba(255,211,90,.5);padding:7px 13px;border-radius:99px;font-weight:700;font-size:13px;margin-bottom:18px}
+h1{font-family:Georgia,serif;font-size:clamp(46px,7vw,78px);line-height:.98;max-width:780px}
+h1 span{color:var(--gold)}
+.hero p{max-width:720px;font-size:19px;margin:25px 0 30px;color:#eef7f2}
+.btns{display:flex;gap:14px;flex-wrap:wrap}
+.btn{display:inline-flex;align-items:center;justify-content:center;padding:14px 22px;border-radius:10px;font-weight:800;border:2px solid var(--gold)}
+.btn.gold{background:var(--gold);color:#17271f}
+.btn.outline{color:#fff;border-color:#fff}
+section{padding:72px 5%}
+.container{max-width:1120px;margin:auto}
+.section-head{text-align:center;max-width:700px;margin:0 auto 38px}
+.eyebrow{color:var(--green2);font-size:13px;font-weight:900;letter-spacing:1.5px;text-transform:uppercase}
+h2{font-family:Georgia,serif;font-size:42px;line-height:1.1;margin:9px 0 12px}
+.section-head p{color:var(--muted)}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.card{border:1px solid var(--line);border-radius:17px;padding:24px;background:#fff;box-shadow:0 8px 25px rgba(8,48,37,.06);transition:.2s}
+.card:hover{transform:translateY(-3px);box-shadow:0 13px 30px rgba(8,48,37,.1)}
+.icon{width:52px;height:52px;border-radius:14px;background:#edf7f1;display:grid;place-items:center;font-size:27px;margin-bottom:16px}
+.card h3{font-size:20px;margin-bottom:6px}
+.card p{color:var(--muted);font-size:15px}
+.about{background:var(--cream)}
+.about-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:45px;align-items:center}
+.about-copy p{color:#56615d;margin:15px 0}
+.points{display:grid;gap:13px;margin-top:20px}
+.point{display:flex;gap:12px;align-items:flex-start}
+.check{color:var(--green2);font-weight:900;font-size:20px}
+.stats{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
+.stat{background:#fff;border:1px solid var(--line);padding:22px;border-radius:15px}
+.stat strong{display:block;font-size:28px;color:var(--green)}
+.why{background:#f6faf7}
+.why .card{background:#fff}
+.cta{background:linear-gradient(135deg,#073c2d,#0b5a42);color:#fff;text-align:center}
+.cta p{max-width:650px;margin:0 auto 25px;color:#e5f0eb}
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:22px}
+.contact-box{border:1px solid var(--line);border-radius:17px;padding:26px}
+.contact-box h3{margin-bottom:10px}
+.contact-box p{color:var(--muted);margin:7px 0}
+.contact-link{display:inline-block;color:var(--green2);font-weight:800;margin-top:8px}
+footer{background:#04271e;color:#dbe8e2;padding:35px 5%}
+.footer-inner{max-width:1120px;margin:auto;display:flex;justify-content:space-between;gap:25px;align-items:center}
+.footer-inner img{width:95px;height:70px;object-fit:contain;background:#fff;border-radius:8px}
+.small{font-size:13px;color:#9eb1a9}
+.whatsapp{position:fixed;right:18px;bottom:18px;z-index:30;background:#1ca64c;color:#fff;padding:13px 17px;border-radius:99px;font-weight:900;box-shadow:0 8px 25px rgba(0,0,0,.25)}
+@media(max-width:760px){
+.topbar{font-size:12px;padding:8px 4%;justify-content:center;text-align:center}.topbar .desktop{display:none}
+header{padding:8px 4%}.logo{width:95px;height:70px}.menu{display:block}nav{display:none;position:absolute;top:87px;left:0;right:0;background:#fff;padding:18px 5%;box-shadow:0 10px 20px rgba(0,0,0,.08);flex-direction:column;align-items:stretch;gap:15px}nav.open{display:flex}.nav-cta{text-align:center}
+.hero{padding:58px 5% 62px}h1{font-size:52px}.hero p{font-size:17px}
+section{padding:58px 5%}h2{font-size:35px}.grid,.about-grid,.contact-grid{grid-template-columns:1fr}.stats{grid-template-columns:1fr 1fr}.footer-inner{flex-direction:column;align-items:flex-start}
+.whatsapp{right:12px;bottom:12px}
 }
 </style>
 </head>
 <body>
-<div class="topbar"><span>📍 Agartala, Tripura, India</span><span>Wholesale Supplier of Fishing Nets, Shade Nets, Ropes & More</span><span>📞 +91 87986 61471 &nbsp; 💬 WhatsApp</span></div>
-
-<nav class="nav">
-<a href="#home"><img src="basanti-logo.png" alt="Basanti Stores logo" class="logo"></a>
-<div class="navlinks"><a href="#home">Home</a><a href="#products">Products</a><a href="#about">About Us</a><a href="#why">Why Choose Us</a><a href="#contact">Contact</a><a class="whatsapp" href="https://wa.me/918798661471?text=Hello%20Basanti%20Stores,%20I%20would%20like%20to%20make%20an%20enquiry." target="_blank">💬 WhatsApp Us</a></div>
-<button class="mobile-menu" onclick="document.querySelector('.navlinks').style.display=document.querySelector('.navlinks').style.display==='flex'?'none':'flex'">☰</button>
-</nav>
-
-<section class="hero" id="home"><div class="hero-inner">
-<h1>Quality Products.<br><span>Reliable Supply.</span></h1>
-<p>Wholesale supplier of fishing nets, boundary nets, shade nets, ropes, tarpaulins, pipes and agricultural products — serving customers across Tripura.</p>
-<div class="btns"><a class="btn gold" href="#products">🛍 View Products</a><a class="btn outline" href="https://wa.me/918798661471?text=Hello%20Basanti%20Stores,%20I%20would%20like%20to%20make%20an%20enquiry." target="_blank">💬 WhatsApp Us</a></div>
-</div></section>
-
-<section class="section" id="products">
-<div class="kicker">OUR PRODUCTS</div><h2>Product Categories</h2>
-<div class="products">
-<div class="card"><div class="icon">🕸️</div><h3>Fishing Nets</h3><a class="smallbtn" href="#contact">View Products</a></div>
-<div class="card"><div class="icon">🚧</div><h3>Boundary Nets</h3><a class="smallbtn" href="#contact">View Products</a></div>
-<div class="card"><div class="icon">🌿</div><h3>Shade Nets</h3><a class="smallbtn" href="#contact">View Products</a></div>
-<div class="card"><div class="icon">🪢</div><h3>Ropes</h3><a class="smallbtn" href="#contact">View Products</a></div>
-<div class="card"><div class="icon">🔵</div><h3>Tarpaulins</h3><a class="smallbtn" href="#contact">View Products</a></div>
-<div class="card"><div class="icon">🧪</div><h3>Pipes</h3><a class="smallbtn" href="#contact">View Products</a></div>
-<div class="card"><div class="icon">🌾</div><h3>Agricultural Items</h3><a class="smallbtn" href="#contact">View Products</a></div>
+<div class="topbar">
+  <div>Wholesale Supplier of Fishing Nets, Shade Nets, Ropes & More</div>
+  <div><a href="tel:+918798661471">📞 +91 87986 61471</a> &nbsp; · &nbsp; <a href="https://wa.me/918798661471" target="_blank">💬 WhatsApp</a></div>
 </div>
-<div class="center"><a class="btn gold" href="#contact">View All Products →</a></div>
+
+<header>
+  <a href="#"><img class="logo" src="basanti-logo.png" alt="Basanti Stores logo"></a>
+  <button class="menu" aria-label="Open menu" onclick="document.querySelector('nav').classList.toggle('open')">☰</button>
+  <nav>
+    <a href="#products">Products</a>
+    <a href="#about">About Us</a>
+    <a href="#why">Why Us</a>
+    <a href="#contact">Contact</a>
+    <a class="nav-cta" href="https://wa.me/918798661471?text=Hello%20Basanti%20Stores%2C%20I%20want%20to%20enquire%20about%20your%20products." target="_blank">Get a Quote</a>
+  </nav>
+</header>
+
+<main>
+<section class="hero">
+  <div class="hero-inner">
+    <div class="badge">TRUSTED WHOLESALE SUPPLIER • TRIPURA</div>
+    <h1>Quality Products.<br><span>Reliable Supply.</span></h1>
+    <p>Wholesale supplier of fishing nets, boundary nets, shade nets, ropes, tarpaulins, pipes and agricultural products — serving customers across Tripura.</p>
+    <div class="btns">
+      <a class="btn gold" href="#products">🛍️ View Products</a>
+      <a class="btn outline" href="https://wa.me/918798661471?text=Hello%20Basanti%20Stores%2C%20I%20would%20like%20a%20quotation." target="_blank">💬 WhatsApp Us</a>
+    </div>
+  </div>
 </section>
 
-<section class="about" id="about"><div class="section"><div class="about-grid">
-<div><div class="kicker" style="text-align:left">ABOUT US</div><h2>Basanti Stores</h2><p>Basanti Stores is a trusted wholesale supplier based in Agartala, Tripura. We deal in a wide range of high-quality products including fishing nets, shade nets, ropes, tarpaulins, pipes and agricultural items.</p><p>Our commitment is to provide durable products, competitive prices and reliable service to support businesses, farmers and contractors across Tripura.</p><a class="whatsapp" href="https://wa.me/918798661471?text=Hello%20Basanti%20Stores" target="_blank">Enquire on WhatsApp →</a></div>
-<div class="features" id="why">
-<div class="feature"><div class="feature-icon">🛡️</div><div><b>Premium Quality</b><span>Durable products sourced for dependable use.</span></div></div>
-<div class="feature"><div class="feature-icon">₹</div><div><b>Wholesale Pricing</b><span>Competitive rates for retailers and bulk buyers.</span></div></div>
-<div class="feature"><div class="feature-icon">🚚</div><div><b>Timely Delivery</b><span>Fast and safe supply across Agartala and Tripura.</span></div></div>
-<div class="feature"><div class="feature-icon">☎️</div><div><b>Customer Support</b><span>Helpful service for product and bulk enquiries.</span></div></div>
-</div>
-<div class="enquiry" id="contact"><h3>Wholesale Enquiry</h3><p>Have a requirement in bulk? Send us your enquiry.</p><a class="btn outline" href="https://wa.me/918798661471?text=Hello%20Basanti%20Stores,%20I%20need%20a%20wholesale%20quotation." target="_blank">💬 Send Enquiry on WhatsApp</a><a class="btn outline" href="tel:+918798661471">📞 Call Now: +91 87986 61471</a></div>
-</div></div></section>
+<section id="products">
+  <div class="container">
+    <div class="section-head">
+      <div class="eyebrow">Our Products</div>
+      <h2>Built for trade, farming & everyday work.</h2>
+      <p>Reliable products for retailers, contractors, farmers, fishermen and bulk buyers.</p>
+    </div>
+    <div class="grid">
+      <article class="card"><div class="icon">🎣</div><h3>Fishing Nets</h3><p>Fishing nets and related fishing gear for regular and bulk requirements.</p></article>
+      <article class="card"><div class="icon">🕸️</div><h3>Boundary Nets</h3><p>Practical netting solutions for farms, properties, sports areas and more.</p></article>
+      <article class="card"><div class="icon">🌿</div><h3>Shade Nets</h3><p>Shade and protective netting for agriculture, construction and other uses.</p></article>
+      <article class="card"><div class="icon">🪢</div><h3>Ropes</h3><p>Different types of ropes for agricultural, commercial and general applications.</p></article>
+      <article class="card"><div class="icon">⛺</div><h3>Tarpaulins</h3><p>Durable covering solutions for storage, transport, construction and outdoor use.</p></article>
+      <article class="card"><div class="icon">🔩</div><h3>Pipes & More</h3><p>Pipes and other useful agriculture, construction and trade-related supplies.</p></article>
+    </div>
+  </div>
+</section>
 
-<section class="cta"><h2>Need a Bulk Supply?</h2><p>Tell us what you need and we'll help you with the right products and wholesale pricing.</p><a class="btn gold" href="https://wa.me/918798661471?text=Hello%20Basanti%20Stores,%20please%20send%20me%20a%20quotation." target="_blank">💬 Get a Wholesale Quote</a></section>
+<section id="about" class="about">
+  <div class="container about-grid">
+    <div class="about-copy">
+      <div class="eyebrow">About Basanti Stores</div>
+      <h2>Your dependable local wholesale partner.</h2>
+      <p>Basanti Stores supplies practical, quality products to businesses and customers who need dependable materials at competitive wholesale rates.</p>
+      <p>From fishing and agriculture to construction and general trade, our goal is simple: <strong>quality products, reliable supply and long-term customer relationships.</strong></p>
+      <div class="points">
+        <div class="point"><span class="check">✓</span><span>Wide range of netting, ropes, tarpaulins and related products.</span></div>
+        <div class="point"><span class="check">✓</span><span>Wholesale-focused service for bulk buyers and retailers.</span></div>
+        <div class="point"><span class="check">✓</span><span>Serving customers across Tripura.</span></div>
+      </div>
+    </div>
+    <div class="stats">
+      <div class="stat"><strong>Wholesale</strong><span>Bulk supply & trade-focused service</span></div>
+      <div class="stat"><strong>Tripura</strong><span>Serving customers across the state</span></div>
+      <div class="stat"><strong>6+ Categories</strong><span>Nets, ropes, tarpaulins, pipes & more</span></div>
+      <div class="stat"><strong>Direct Enquiry</strong><span>Fast quotation through WhatsApp</span></div>
+    </div>
+  </div>
+</section>
 
-<footer><div class="footer-grid">
-<div><img src="basanti-logo.png" alt="Basanti Stores" class="footer-logo"><p style="margin-top:10px">Quality Products. Reliable Supply.</p></div>
-<div><h4>Quick Links</h4><a href="#home">Home</a><a href="#products">Products</a><a href="#about">About Us</a><a href="#why">Why Choose Us</a><a href="#contact">Contact</a></div>
-<div><h4>Our Products</h4><a href="#products">Fishing Nets</a><a href="#products">Boundary Nets</a><a href="#products">Shade Nets</a><a href="#products">Ropes</a><a href="#products">Tarpaulins</a><a href="#products">Pipes</a><a href="#products">Agricultural Items</a></div>
-<div><h4>Contact Us</h4><p>📍 Agartala, Tripura, India</p><a href="tel:+918798661471">📞 +91 87986 61471</a><a href="https://wa.me/918798661471" target="_blank">💬 WhatsApp Us</a><p>🕘 Mon - Sat: 9:00 AM - 7:00 PM</p></div>
-</div><div class="copy">© 2026 Basanti Stores. All Rights Reserved.</div></footer>
+<section id="why" class="why">
+  <div class="container">
+    <div class="section-head">
+      <div class="eyebrow">Why Choose Us</div>
+      <h2>Simple service. Strong supply.</h2>
+      <p>We focus on the things that matter to wholesale customers.</p>
+    </div>
+    <div class="grid">
+      <article class="card"><div class="icon">⭐</div><h3>Quality Focus</h3><p>We aim to provide dependable products suitable for real-world commercial use.</p></article>
+      <article class="card"><div class="icon">📦</div><h3>Wholesale Supply</h3><p>Designed for retailers, businesses and customers with bulk requirements.</p></article>
+      <article class="card"><div class="icon">🤝</div><h3>Reliable Support</h3><p>Talk directly with us for product availability, quantities and quotations.</p></article>
+    </div>
+  </div>
+</section>
+
+<section class="cta">
+  <div class="container">
+    <div class="eyebrow" style="color:#ffd35a">Need a bulk quotation?</div>
+    <h2>Tell us what you need.</h2>
+    <p>Send your product name, required quantity and delivery details. We'll help you with the enquiry.</p>
+    <a class="btn gold" href="https://wa.me/918798661471?text=Hello%20Basanti%20Stores%2C%20I%20need%20a%20bulk%20quotation.%20Product%3A%20%20Quantity%3A%20%20Delivery%20location%3A%20" target="_blank">💬 Request a Quote on WhatsApp</a>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="container">
+    <div class="section-head">
+      <div class="eyebrow">Contact</div>
+      <h2>Let's do business.</h2>
+      <p>For product enquiries and wholesale orders, contact Basanti Stores directly.</p>
+    </div>
+    <div class="contact-grid">
+      <div class="contact-box">
+        <h3>📞 Phone / WhatsApp</h3>
+        <p>Call or message us for product availability and quotations.</p>
+        <a class="contact-link" href="tel:+918798661471">+91 87986 61471</a><br>
+        <a class="contact-link" href="https://wa.me/918798661471" target="_blank">Chat on WhatsApp →</a>
+      </div>
+      <div class="contact-box">
+        <h3>📍 Service Area</h3>
+        <p><strong>Agartala, Tripura</strong></p>
+        <p>Serving customers and wholesale requirements across Tripura.</p>
+        <a class="contact-link" href="https://www.google.com/maps/search/?api=1&query=Agartala%2C%20Tripura" target="_blank">Open Agartala on Maps →</a>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="footer-inner">
+    <img src="basanti-logo.png" alt="Basanti Stores">
+    <div>
+      <strong>Basanti Stores</strong><br>
+      <span class="small">Quality Products • Reliable Supply</span>
+    </div>
+    <div class="small">© 2026 Basanti Stores. All rights reserved.</div>
+  </div>
+</footer>
+
+<a class="whatsapp" href="https://wa.me/918798661471?text=Hello%20Basanti%20Stores%2C%20I%20have%20a%20product%20enquiry." target="_blank">💬 WhatsApp</a>
 </body>
 </html>
